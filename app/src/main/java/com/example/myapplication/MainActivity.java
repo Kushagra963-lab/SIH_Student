@@ -8,11 +8,14 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import android.content.Intent;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.Gravity;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
@@ -26,6 +29,18 @@ Toolbar toolbar;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                Intent ihome=new Intent(MainActivity.this, Loginpage.class);
+                startActivity(ihome);
+            }
+        },20000);
+
+
+
 
         drawerLayout = findViewById(R.id.drawerLayout);
         navigationView = findViewById(R.id.navigationView);
@@ -46,12 +61,16 @@ Toolbar toolbar;
                 int id = item.getItemId();
 
                 if(id==R.id.Home){
+                    loadFragment(new FragmentA());
                     Toast.makeText(MainActivity.this , "Home", Toast.LENGTH_SHORT).show();
                 } else if (id==R.id.Features) {
-                        loadFragment(new FragmentA());
+                        loadFragment(new FragmentB());
+                        Toast.makeText(MainActivity.this , "Features", Toast.LENGTH_SHORT).show();
                 } else if (id==R.id.Contact) {
-                    Toast.makeText(MainActivity.this , "Contack", Toast.LENGTH_SHORT).show();
+                    loadFragment(new FragmentC());
+                    Toast.makeText(MainActivity.this , "Contact", Toast.LENGTH_SHORT).show();
                 } else{
+                    loadFragment(new FragmentD());
                     Toast.makeText(MainActivity.this , "Help", Toast.LENGTH_SHORT).show();
                 }
 
@@ -60,6 +79,8 @@ Toolbar toolbar;
                 return true;
             }
         });
+
+
     }
 
     public void onBackPressed() {

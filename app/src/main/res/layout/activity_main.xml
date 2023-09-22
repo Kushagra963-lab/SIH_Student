@@ -7,14 +7,18 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     tools:openDrawer="start"
+    android:orientation="vertical"
+
     android:id="@+id/drawerLayout"
     tools:context=".MainActivity">
-
-
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="HIIIIIIII"/>
     <include layout="@layout/app_bar"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
 
 
     <com.google.android.material.navigation.NavigationView
@@ -30,3 +34,4 @@
 
 
 </androidx.drawerlayout.widget.DrawerLayout>
+
