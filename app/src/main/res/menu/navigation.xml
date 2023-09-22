@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+
+    <item
+        android:id="@+id/Features"
+        android:title="Feratures"
+        android:icon="@drawable/baseline_child_friendly_24"/>
+
+    <item
+        android:id="@+id/Contact"
+        android:title="Contact"
+        android:icon="@drawable/baseline_cell_tower_24"/>
+
+    <item
+        android:id="@+id/Help"
+        android:title="Help"
+        android:icon="@drawable/baseline_help_outline_24"/>
+
+</menu>
