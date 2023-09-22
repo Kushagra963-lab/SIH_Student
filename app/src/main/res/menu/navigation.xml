@@ -9,7 +9,7 @@
 
     <item
         android:id="@+id/Features"
-        android:title="Feratures"
+        android:title="Features"
         android:icon="@drawable/baseline_child_friendly_24"/>
 
     <item

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="176dp"
     android:padding="16dp"
-    android:background="#4CAF50"
+    android:background="#B978C8"
     android:gravity="center_vertical"
     android:orientation="vertical">
 
@@ -11,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher"
+
         android:contentDescription="Header Image"/>
 
     <TextView
