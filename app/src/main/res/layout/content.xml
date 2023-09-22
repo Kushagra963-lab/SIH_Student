@@ -1,11 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="#A2CDD3"
     android:layout_height="match_parent">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EduNexus"
+
+        />
+
     <FrameLayout
+        android:id="@+id/container"
+
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/container"/>
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button2"
+            tex
+            android:layout_width="142dp"
+            android:layout_height="183dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginBottom="56dp"
+            android:background="#A2CDD3"
+
+            android:src="@drawable/circle_xxxs_svgrepo_com__2_"
+            android:text="Button" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="240dp"
+            android:layout_marginBottom="100dp"
+            android:background="#A2CDD3"
+            android:src="@drawable/circle_xxxs_svgrepo_com__3_"
+            android:text="Button" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/button4"
+            android:layout_width="124dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="260dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginBottom="56dp"
+            android:background="#A2CDD3"
+            android:src="@drawable/circle_xxxs_svgrepo_com__4_"
+            android:text="Button" />
+    </FrameLayout>
 
 </LinearLayout>
