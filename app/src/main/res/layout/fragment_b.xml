@@ -2,17 +2,37 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#5BB3B3"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#C7E1DD"
     android:layout_height="match_parent"
     tools:context=".FragmentB">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginTop="20dp"
+    android:text="Features :"
+    android:textColor="#203734"
+    android:textStyle="bold"
+    android:textSize="54sp"/>
+
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Features"
-        android:textColor="#CFC8C8"
-        android:textStyle="italic"
-        android:textSize="34sp"/>
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#350C0C"
+        android:textSize="26sp"
+        android:text="Upcoming"/>
+    
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/lottieani"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="300dp"
+        app:lottie_autoPlay="true" />
 
 </FrameLayout>

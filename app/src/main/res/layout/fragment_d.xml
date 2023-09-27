@@ -2,7 +2,7 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#1F51FF"
+    android:background="#C7E1DD"
     android:layout_height="match_parent"
     tools:context=".FragmentD">
 
@@ -10,9 +10,20 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Help page"
-        android:textColor="#CFC8C8"
-        android:textStyle="italic"
-        android:textSize="34sp"/>
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Help :"
+        android:textColor="#203734"
+        android:textStyle="bold"
+        android:textSize="54sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="25dp"
+        android:textColor="#350C0C"
+        android:textSize="26sp"
+        android:text="Reach us at our website edunexushelp@edu.com or contact at number 556936454  we will be delited to help you at your earliest"/>
 
 </FrameLayout>
